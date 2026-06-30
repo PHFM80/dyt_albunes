@@ -1,0 +1,13 @@
+.album-stage {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(rgba(30, 24, 18, 0.18), rgba(30, 24, 18, 0.18)),
+        #8a6a4f;
+}

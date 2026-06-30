@@ -1,0 +1,26 @@
+.album {
+    background-color: #f8f0df;
+    border-radius: 6px;
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+}
+
+.album--closed {
+    width: min(72vw, 460px);
+    aspect-ratio: 8 / 11;
+}
+
+.album--open {
+    width: min(92vw, 1040px);
+    aspect-ratio: 16 / 10;
+}
+
+@media (max-width: 720px) {
+    .album--closed {
+        width: min(86vw, 420px);
+    }
+
+    .album--open {
+        width: min(94vw, 720px);
+    }
+}

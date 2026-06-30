@@ -1,0 +1,56 @@
+.album-face {
+    min-width: 0;
+    padding: clamp(24px, 4vw, 56px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-face--left {
+    background:
+        linear-gradient(270deg, rgba(94, 62, 40, 0.18), rgba(255, 255, 255, 0) 18%),
+        #f6eddf;
+    border-right: 1px solid rgba(92, 68, 48, 0.28);
+}
+
+.album-face--right {
+    background:
+        linear-gradient(90deg, rgba(94, 62, 40, 0.18), rgba(255, 255, 255, 0) 18%),
+        #fff8ec;
+}
+
+.album-face--cover-inside {
+    color: #4b392e;
+    background:
+        linear-gradient(270deg, rgba(64, 38, 28, 0.2), rgba(255, 255, 255, 0) 22%),
+        #e8d2bd;
+}
+
+.album-face__content {
+    width: 100%;
+    min-height: 72%;
+    padding: clamp(20px, 3vw, 36px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 1px dashed rgba(90, 72, 55, 0.38);
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.album-face h2 {
+    margin: 0;
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    font-weight: 700;
+}
+
+.album-face p {
+    max-width: 28ch;
+    margin: 14px 0 0;
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    line-height: 1.5;
+}
