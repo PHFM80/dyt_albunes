@@ -1,4 +1,4 @@
-export function renderCover(coverContent) {
+export function renderCover(coverContent, albumActions) {
     const cover = document.createElement("section");
     cover.className = "album-cover";
 
@@ -11,7 +11,13 @@ export function renderCover(coverContent) {
     const subtitle = document.createElement("p");
     subtitle.textContent = coverContent.subtitle;
 
-    content.append(title, subtitle);
+    const openButton = document.createElement("button");
+    openButton.className = "album-cover__button";
+    openButton.type = "button";
+    openButton.textContent = "Abrir álbum";
+    openButton.addEventListener("click", albumActions.onOpen);
+
+    content.append(title, subtitle, openButton);
     cover.append(content);
 
     return cover;
